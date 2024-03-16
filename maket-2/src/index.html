@@ -1,12 +1,396 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="scss/style.scss">
-    <title>Maket-2</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="scss/main.scss">
+    <title>parcel</title>
 </head>
+
 <body>
-    
+    <header class="header">
+        <div class="container">
+            <div class="header__contant">
+                <div class="header__logo">
+                    <img src="/img/logo-2.svg" alt="logo">
+                </div>
+                <div class="header__burger">
+                    <svg width="24.000000" height="18.000000" viewBox="0 0 24 18" fill="none"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <desc>
+                            Created with Pixso.
+                        </desc>
+                        <defs />
+                        <path id="Vector"
+                            d="M0 0L24 0L24 3L0 3L0 0ZM0 7.5L24 7.5L24 10.5L0 10.5L0 7.5ZM0 15L24 15L24 18L0 18L0 15Z"
+                            fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero" />
+                    </svg>
+                </div>
+                <nav class="header_nav">
+                    <ul class="nav_list">
+                        <li class="nav_list-item">FEATURES<a href="#"></a></li>
+                        <li class="nav_list-item">WORKS<a href="#"></a></li>
+                        <li class="nav_list-item">OUR TEAM<a href="#"></a></li>
+                        <li class="nav_list-item">TESTIMONIALS<a href="#"></a></li>
+                        <li class="nav_list-item">DOWNLOAD<a href="#"></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="main-banner">
+            <div class="container">
+                <div class="main__block">
+                    <h2 class="main__block-title">
+                        YOUR FAVORITE ONE PAGE MULTI PURPOSE TEMPLATE
+                    </h2>
+                    <p class="main__block-dec">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna
+                        vel scelerisque nisl consectetur et.
+                    </p>
+                    <a href="#" class="main__block-btn">FIND OUT MORE</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <div class="features__container">
+                    <div class="features__block">
+                        <div class="features__block-img">
+                            <img src="/img/icon_1.svg" alt="img">
+                        </div>
+                        <h2 class="features__block-title">
+                            EASILY CUSTIMISED
+                        </h2>
+                        <p class="features__block-text">
+                            Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna
+                            mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.
+                        </p>
+                    </div>
+                    <div class="features__block">
+                        <div class="features__block-img">
+                            <img src="/img/icon_2.svg" alt="img">
+                        </div>
+                        <h2 class="features__block-title">
+                            RESPONSIVE READY
+                        </h2>
+                        <p class="features__block-text">
+                            Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna
+                            mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.
+                        </p>
+                    </div>
+                    <div class="features__block">
+                        <div class="features__block-img">
+                            <img src="/img/icon_3.svg" alt="img">
+                        </div>
+                        <h2 class="features__block-title">
+                            MODERN DESIGN
+                        </h2>
+                        <p class="features__block-text">
+                            Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna
+                            mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.
+                        </p>
+                    </div>
+                    <div class="features__block">
+                        <div class="features__block-img">
+                            <img src="/img/icon_4.svg" alt="img">
+                        </div>
+                        <h2 class="features__block-title">
+                            CLEAN CODE
+                        </h2>
+                        <p class="features__block-text">
+                            Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna
+                            mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.
+                        </p>
+                    </div>
+                    <div class="features__block">
+                        <div class="features__block-img">
+                            <img src="/img/icon_5.svg" alt="img">
+                        </div>
+                        <h2 class="features__block-title">
+                            READY TO SHIP
+                        </h2>
+                        <p class="features__block-text">
+                            Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna
+                            mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.
+                        </p>
+                    </div>
+                    <div class="features__block">
+                        <div class="features__block-img">
+                            <img src="/img/icon_6.svg" alt="img">
+                        </div>
+                        <h2 class="features__block-title">
+                            DOWNLOAD FOR FREE
+                        </h2>
+                        <p class="features__block-text">
+                            Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna
+                            mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="work">
+            <div class="work__block">
+                <div class="work__block-img"><img src="../img/work_1.png" alt="img"></div>
+                <div class="work__block-text">
+                    <h4>PROJECT NAME</h4>
+                    <p>User Interface Design</p>
+                </div>
+            </div>
+            <div class="work__block">
+                <div class="work__block-img"><img src="../img/work_2.png" alt="img"></div>
+                <div class="work__block-text">
+                    <h4>PROJECT NAME</h4>
+                    <p>User Interface Design</p>
+                </div>
+            </div>
+            <div class="work__block">
+                <div class="work__block-img"><img src="../img/Rectangle 17.png" alt="img"></div>
+                <div class="work__block-text">
+                    <h4>PROJECT NAME</h4>
+                    <p>User Interface Design</p>
+                </div>
+            </div>
+            <div class="work__block">
+                <div class="work__block-img"><img src="../img/work_4.png" alt="img"></div>
+                <div class="work__block-text">
+                    <h4>PROJECT NAME</h4>
+                    <p>User Interface Design</p>
+                </div>
+            </div>
+            <div class="work__block">
+                <div class="work__block-img"><img src="../img/work_5.png" alt="img"></div>
+                <div class="work__block-text">
+                    <h4>PROJECT NAME</h4>
+                    <p>User Interface Design</p>
+                </div>
+            </div>
+            <div class="work__block">
+                <div class="work__block-img"><img src="../img/work_6.png" alt="img"></div>
+                <div class="work__block-text">
+                    <h4>PROJECT NAME</h4>
+                    <p>User Interface Design</p>
+                </div>
+            </div>
+            <div class="work__block">
+                <div class="work__block-img"><img src="../img/work_7.png" alt="img"></div>
+                <div class="work__block-text">
+                    <h4>PROJECT NAME</h4>
+                    <p>User Interface Design</p>
+                </div>
+            </div>
+            <div class="work__block">
+                <div class="work__block-img"><img src="../img/work_8.png" alt="img"></div>
+                <div class="work__block-text">
+                    <h4>PROJECT NAME</h4>
+                    <p>User Interface Design</p>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="card">
+            <div class="container">
+                <div class="card__content">
+                    <div class="card__block">
+                        <div class="card__block-img"><img src="/img/Rectangle 1.jpg" alt="img"></div>
+                        <h3 class="card__block-title">Ruth woods</h3>
+                        <p class="card__block-text">FOUNDER, CEO</p>
+                        <p class="card__block-dec">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
+                            nibh,
+                            ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit
+                            amet
+                            non magna. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+                        <div class="card__img-block">
+                            <img src="/img/facebook_icon (1).svg" alt="img">
+                            <img src="/img/twitter_icon (1).svg" alt="img">
+                            <img src="/img/linkedin_icon (1).svg" alt="img">
+                        </div>
+                    </div>
+                    <div class="card__block">
+                        <div class="card__block-img"><img src="/img/Rectangle 2.jpg" alt="img"></div>
+                        <h3 class="card__block-title">Timothy Reed</h3>
+                        <p class="card__block-text">CO-FOUNDER, DEVELOPER</p>
+                        <p class="card__block-dec">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
+                            nibh,
+                            ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit
+                            amet
+                            non magna. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+                        <div class="card__img-block">
+                            <img src="/img/facebook_icon (1).svg" alt="img">
+                            <img src="/img/twitter_icon (1).svg" alt="img">
+                            <img src="/img/linkedin_icon (1).svg" alt="img">
+                        </div>
+                    </div>
+                    <div class="card__block">
+                        <div class="card__block-img"><img src="/img/Rectangle 3.jpg" alt="img"></div>
+                        <h3 class="card__block-title">Victoria Vladez</h3>
+                        <p class="card__block-text">UI DESIGNER</p>
+                        <p class="card__block-dec">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
+                            nibh,
+                            ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit
+                            amet
+                            non magna. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+                        <div class="card__img-block">
+                            <img src="/img/facebook_icon (1).svg" alt="img">
+                            <img src="/img/twitter_icon (1).svg" alt="img">
+                            <img src="/img/linkedin_icon (1).svg" alt="img">
+                        </div>
+                    </div>
+                    <div class="card__block">
+                        <div class="card__block-img"><img src="/img/Rectangle 4.jpg" alt="img"></div>
+                        <h3 class="card__block-title">Beverly Little</h3>
+                        <p class="card__block-text">DATA SCIENTIST</p>
+                        <p class="card__block-dec">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
+                            nibh,
+                            ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit
+                            amet
+                            non magna. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+                        <div class="card__img-block">
+                            <img src="/img/facebook_icon (1).svg" alt="img">
+                            <img src="/img/twitter_icon (1).svg" alt="img">
+                            <img src="/img/linkedin_icon (1).svg" alt="img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="testi">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="testi__block">
+                            <div class="testi__block-img">
+                                <img src="/img/bg.jpg" alt="img">
+                            </div>
+                            <div class="testi__content">
+                                <h2 class="testi__content-title">“Integer Posuere Erat A Ante Venenatis Dapibus Posuere
+                                    Velit
+                                    Aliquet. Donec Sed Odio Dui. Aenean Eu Leo Quam...”</h2>
+                                <p class="testi__content-text">SUSAN SIMS, INTERACTION DESIGN AT XYZ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testi__block">
+                            <div class="testi__block-img">
+                                <img src="https://img.freepik.com/free-photo/natures-beauty-reflected-in-tranquil-mountain-waters-generative-ai_188544-7867.jpg"
+                                    alt="img">
+                            </div>
+                            <div class="testi__content">
+                                <h2 class="testi__content-title">“Integer Posuere Erat A Ante Venenatis Dapibus Posuere
+                                    Velit
+                                    Aliquet. Donec Sed Odio Dui. Aenean Eu Leo Quam...”</h2>
+                                <p class="testi__content-text">SUSAN SIMS, INTERACTION DESIGN AT XYZ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testi__block">
+                            <div class="testi__block-img">
+                                <img src="https://img.freepik.com/free-photo/beautiful-mountain-range_198523-36.jpg?size=626&ext=jpg"
+                                    alt="img">
+                            </div>
+                            <div class="testi__content">
+                                <h2 class="testi__content-title">“Integer Posuere Erat A Ante Venenatis Dapibus Posuere
+                                    Velit
+                                    Aliquet. Donec Sed Odio Dui. Aenean Eu Leo Quam...”</h2>
+                                <p class="testi__content-text">SUSAN SIMS, INTERACTION DESIGN AT XYZ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testi__block">
+                            <div class="testi__block-img">
+                                <img src="https://img.freepik.com/free-photo/look-from-above-at-the-water-in-the-fjord_8353-1152.jpg?size=626&ext=jpg"
+                                    alt="img">
+                            </div>
+                            <div class="testi__content">
+                                <h2 class="testi__content-title">“Integer Posuere Erat A Ante Venenatis Dapibus Posuere
+                                    Velit
+                                    Aliquet. Donec Sed Odio Dui. Aenean Eu Leo Quam...”</h2>
+                                <p class="testi__content-text">SUSAN SIMS, INTERACTION DESIGN AT XYZ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testi__block">
+                            <div class="testi__block-img">
+                                <img src="https://png.pngtree.com/background/20230519/original/pngtree-landscape-jpg-wallpapers-free-download-picture-image_2668463.jpg"
+                                    alt="img">
+                            </div>
+                            <div class="testi__content">
+                                <h2 class="testi__content-title">“Integer Posuere Erat A Ante Venenatis Dapibus Posuere
+                                    Velit
+                                    Aliquet. Donec Sed Odio Dui. Aenean Eu Leo Quam...”</h2>
+                                <p class="testi__content-text">SUSAN SIMS, INTERACTION DESIGN AT XYZ</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination swiper-pagination_marg"></div>
+            </div>
+        </section>
+        <section class="download">
+            <div class="container">
+                <div class="download__block">
+                    <h2 class="download__block-title_top">
+                        Are You Ready to Start? Download Now For Free!
+                    </h2>
+                    <h3 class="download__block-title_down">
+                        FUSCE DARIBUS, TELLUS AC CURSUS COMMODO
+                    </h3>
+                    <a class="download__block-btn" href="#">DOWNLOAD HERE</a>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+    <footer class="footer">
+        <div class="footer__top">
+            <div class="container">
+                <div class="footer__container-block">
+                    <div class="footer__location">
+                        <h4 class="footer__location-title">LOCATION</h4>
+                        <p class="footer__location-text">3481 Melrose PlaceBeverly Hills, CA 90210</p>
+                    </div>
+                    <div class="footer__social">
+                        <h4 class="footer__social-title">SHARE WITH LOVE</h4>
+                        <div class="footer__social-img">
+                            <img src="/img/facebook_icon (1).svg" alt="img">
+                            <img src="/img/twitter_icon (1).svg" alt="img">
+                            <img src="/img/linkedin_icon (1).svg" alt="img">
+                        </div>
+                    </div>
+                    <div class="footer__about">
+                        <h4 class="footer__about-title">ABOUT ACTIVEBOX</h4>
+                        <p class="footer__about-text">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec
+                            ullamcorper nulla non metus auctor fringilla.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottem">
+            <div class="container">
+                <div class="footer__content">
+                    <p class="footer__content-text">Copyright © 2015 ActiveBox. All Rights ReservedMade <span
+                            class="footer__content-text_dec">With By Kamal Chaneman</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../src/js/main.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,188 @@
+.testi__block {
+    display: flex;
+    height: 490px
+}
+
+.testi__content {
+    width: 51%;
+    height: 490px;
+    background-color: $purple;
+    display: flex;
+    flex-direction: column;
+    padding: 116px 170px 116px 129px;
+
+    &-title {
+        padding: 17px 0;
+        color: $white;
+        font-family: Cardo;
+        font-style: italic;
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 49px;
+        text-align: left;
+    }
+
+    &-text {
+        padding: 6px 0;
+        color: $white;
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 15px;
+    }
+
+
+}
+
+.swiper {
+    height: 100%;
+}
+
+.swiper-pagination {
+    position: unset;
+    margin-top: 31px;
+    height: 15px;
+}
+
+.testi__block-img {
+    width: 49%;
+    object-fit: cover;
+}
+
+.testi__block-img img {
+    width: 100%;
+    height: 490px;
+}
+
+.swiper-pagination-bullet {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 1px solid rgb(126, 93, 111);
+    background: white;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: rgb(126, 93, 111);
+}
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 12.5px;
+}
+
+
+
+@media (max-width: 1450px) {
+
+    .testi__content {
+        padding: 94px 95px 100px 105px;
+        ;
+    }
+}
+
+@media (max-width: 1250px) {
+
+    .testi__block {
+        height: 332px;
+    }
+
+    .testi__content {
+        height: 332px;
+        padding: 47px 104px 110px 88px;
+
+        &-title {
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 32px;
+        }
+
+        &-text {
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 14px;
+        }
+    }
+
+    .swiper {
+        height: 100%;
+    }
+
+    .testi__block-img {
+        height: 332px;
+    }
+
+    .testi__block-img img {
+        width: 100%;
+        height: 332px;
+    }
+
+    .swiper-pagination-bullet {
+        width: 9px;
+        height: 9px;
+    }
+
+    .swiper-pagination {
+        position: unset;
+        margin-top: 18px;
+        height: 15px;
+    }
+}
+
+@media (max-width: 1023px) {
+
+    .testi__content {
+        padding: 73px 58px 50px 73px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .testi__content {
+        padding: 65px 19px 42px 46px
+    }
+}
+
+@media (max-width: 600px) {
+    .testi__block {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .testi__content {
+        width: 100%;
+        height: 100%;
+        padding: 0px 25px 95px 20px;
+
+        &-title {
+            text-align: center;
+            padding: 23px 0;
+        }
+
+        &-text {
+            text-align: center;
+        }
+    }
+
+    .swiper {
+        height: 100%;
+    }
+
+    .testi__block-img {
+        width: 100%;
+        object-fit: cover;
+        height: 212px;
+    }
+
+    .testi__block-img img {
+        width: 100%;
+        height: 212px;
+        object-fit: cover;
+    }
+
+    .swiper-pagination {
+        position: unset;
+        margin-top: 20px;
+    }
+}

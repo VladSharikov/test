@@ -1,2 +1,11 @@
-@import "cdn" ;
-@import "variables" ;
+.container {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px){
+    .container{
+        padding: 0 20px;
+    }
+}

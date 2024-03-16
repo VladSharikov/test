@@ -1,0 +1,122 @@
+.header {
+    z-index: 10;
+    width: 100%;
+    position: relative;
+
+    &__logo {
+        margin: 38px 0 35px 0
+    }
+
+    &__burger{
+        display: none;
+    }
+
+    &__contant {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid rgb(186, 187, 197);
+
+    }
+}
+
+.nav_list {
+    display: flex;
+}
+
+.nav_list-item {
+    position: relative;
+    margin: 0 31px;
+    color: $white;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: 0%;
+    cursor: pointer;
+
+    &:hover::after {
+        position: absolute;
+        content: "";
+        width: 134px;
+        height: 3px;
+        transition: .3s;
+        background-color: $gray;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 55px;
+    }
+
+    &:active {
+        transition: .3s;
+        color: $darkred;
+    }
+
+    &:active::after {
+        transition: .3s;
+        position: absolute;
+        content: "";
+        width: 134px;
+        height: 3px;
+        background-color: $darkred;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 55px;
+    }
+}
+
+
+@media (max-width: 1250px) {
+
+    .nav_list-item {
+        margin: 0 25px;
+
+        &:hover::after{
+            width: 119px;
+        }
+
+        &:active::after{
+            width: 119px;
+        }
+    }
+}
+
+@media (max-width: 1023px) {
+
+    .nav_list-item {
+        margin: 12.5px;
+
+        &:hover::after{
+            width: 105px;
+        }
+
+        &:active::after{
+            width: 105px;
+        }
+    }
+}
+
+@media (max-width: 768px){
+    
+    .header__contant{
+        border-bottom: none;
+    }
+
+    .header_nav{
+        display: none;
+    }
+
+    .header__logo img{
+        width: 103px;
+        height: 14px;
+    }
+
+    .header__logo{
+        height: 14px;
+        margin: 21px 0 20px 0;
+    }
+
+    .header__burger{
+        display: block;
+        margin-right: 15px;
+    }
+}

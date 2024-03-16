@@ -1,0 +1,115 @@
+.download {
+    margin: 114px 0;
+}
+
+.download__block {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &-title_top {
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 35px;
+        text-align: center;
+        padding: 17px 0;
+        margin-bottom: 5px;
+    }
+
+    &-title_down {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 21px;
+        text-align: center;
+        margin-bottom: 47px;
+    }
+}
+
+.download__block-btn {
+    width: 370px;
+    cursor: pointer;
+    background-color: $red;
+    color: $white;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 28px;
+    text-align: center;
+    padding: 26px 0;
+
+    &:hover {
+        background-color: $darkred;
+        transition: .3s;
+    }
+
+    &:active {
+        box-shadow: 4px 4px 30px 0px $reda;
+        background: $reda;
+        transition: .3s;
+    }
+}
+
+@media (max-width: 1250px) {
+    .download {
+        margin: 77px 0;
+    }
+
+    .download__block-title_top {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 28px;
+        margin-bottom: 4px;
+        padding: 16px 0;
+    }
+
+    .download__block-title_down {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 16px;
+        margin-bottom: 43px;
+    }
+
+    .download__block-btn {
+        width: 314px;
+        font-size: 18px;
+        font-weight: 900;
+        line-height: 21px;
+        padding: 29px 0;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .download {
+        margin: 34px 0px 45px 0;
+        display: flex;
+    }
+
+    .download__block {
+        width: 280px;
+
+        &-title_top {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 21px;
+            padding: 19px 0;
+            margin-bottom: 3px;
+        }
+
+        &-title_down{
+            font-size: 13px;
+            font-weight: 700;
+            line-height: 15px;
+            margin-bottom: 11px;
+        }
+    }
+
+    .download__block-btn{
+        width: 280px;
+        font-size: 18px;
+        font-weight: 900;
+        line-height: 21px;
+    }
+}

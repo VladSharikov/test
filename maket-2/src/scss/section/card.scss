@@ -1,0 +1,151 @@
+.card {
+    &__content {
+        display: flex;
+        gap: 30px;
+        margin: 114px 0;
+    }
+}
+
+.card__block {
+    display: flex;
+    flex-direction: column;
+
+    &-title {
+        color: $black;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 28px;
+        margin-bottom: 5px;
+    }
+
+    &-text {
+        color: $red;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 21px;
+        margin-bottom: 17px;
+    }
+
+    &-dec {
+        color: rgb(108, 114, 121);
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 21px;
+        margin-bottom: 37px;
+    }
+}
+
+.card__block-img {
+    margin-bottom: 30px;
+    width: 270px;
+    height: 270px;
+}
+
+@media (max-width: 1250px) {
+    .card__content {
+        gap: 25px;
+        margin: 78px 0;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .card__block {
+        width: 227px;
+    }
+
+    .card__block-img img {
+        width: 227px;
+        height: 227px;
+    }
+
+    .card__block-img {
+        width: 227px;
+        height: 227px;
+        margin-bottom: 25px;
+    }
+
+    .card__block-title {
+        padding: 2px 0;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 21px;
+        margin-bottom: 4px;
+    }
+
+    .card__block-text {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16px;
+        margin-bottom: 22px;
+    }
+
+    .card__block-dec {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16px;
+        margin-bottom: 39px;
+    }
+
+    .card__img-block img {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+@media (max-width: 1023px) {
+
+    .card__content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 80px 0;
+    }
+
+    .card__block {
+        display: flex;
+        align-items: center;
+        width: 354px;
+    }
+
+    .card__block-dec {
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .card__content {
+        gap: 56px;
+        margin: 35px 0 41px 0;
+    }
+
+    .card__block{
+        width: 280px;
+        align-items: baseline;
+
+        &-text{
+            margin-bottom: 38px;
+        }
+
+        &-dec{
+            text-align: unset;
+            margin-bottom: 49px;
+        }
+    }
+    
+    .card__block-img img{
+        width: 280px;
+        object-fit: cover;
+    }
+
+    .card__block-img{
+        width: 280px;
+    }
+
+    .card__img-block img{
+        width: 39px;
+        height: 39px;
+    }
+
+    
+}
